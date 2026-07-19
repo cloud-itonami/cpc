@@ -1,0 +1,10 @@
+{
+  "name": "cpc-cpc2p1-core",
+  "version": "1.0.0",
+  "description": "cpc.etzhayyim.com — UN CPC Ver.2.1 Core Component",
+  "main": "src/app.ts",
+  "type": "module",
+  "dependencies": {
+    "@etzhayyim/kotodama-host-sdk": "workspace:*"
+  }
+}

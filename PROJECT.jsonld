@@ -1,0 +1,150 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "etzhayyim": "https://resources.etzhayyim.com/etzhayyim-project-resources/id/",
+    "dodaf": "https://resources.etzhayyim.com/etzhayyim-project-resources/id/DM2/",
+    "cpc": "https://unstats.un.org/unsd/classifications/Econ/CPC/",
+    "isic": "https://unstats.un.org/unsd/classifications/Econ/ISIC/",
+    "id": "@id",
+    "type": "@type"
+  },
+  "@type": "etzhayyim:Project",
+  "@id": "https://resources.etzhayyim.com/etzhayyim-project-cpc/id/Project/etzhayyim-project-cpc",
+  "schema:name": "etzhayyim-project-cpc",
+  "schema:description": "UN CPC Ver.2.1 Central Product Classification — Contract-Bounded Architecture with WIT Component Model",
+  "schema:dateModified": "2026-04-15T12:20:00+09:00",
+  "etzhayyim:totalComponents": 83,
+  "etzhayyim:classificationFramework": "cpc",
+  "etzhayyim:architecture": "contract-bounded",
+  "etzhayyim:witPackages": [
+    "etzhayyim:cpc-product-classification@1.0.0",
+    "etzhayyim:cpc-0@1.0.0",
+    "etzhayyim:cpc-1@1.0.0",
+    "etzhayyim:cpc-2@1.0.0",
+    "etzhayyim:cpc-3@1.0.0",
+    "etzhayyim:cpc-4@1.0.0",
+    "etzhayyim:cpc-5@1.0.0",
+    "etzhayyim:cpc-6@1.0.0",
+    "etzhayyim:cpc-7@1.0.0",
+    "etzhayyim:cpc-8@1.0.0",
+    "etzhayyim:cpc-9@1.0.0"
+  ],
+  "etzhayyim:witImports": [
+    "kotodama:contract/agreement@1.0.0",
+    "kotodama:contract/registry@1.0.0",
+    "kotodama:governance/raci@1.0.0",
+    "kotodama:governance/rbac@1.0.0",
+    "etzhayyim:isic-resource-flow/products@1.0.0",
+    "etzhayyim:isic-resource-flow/materials@1.0.0"
+  ],
+  "etzhayyim:progress": {
+    "scaffold": 1,
+    "skeleton": 1,
+    "implemented": 1,
+    "deployed": 0,
+    "full": 0
+  },
+  "etzhayyim:coverage": {
+    "sections": {
+      "total": 10,
+      "covered": 10,
+      "percentage": 100
+    },
+    "divisions": {
+      "total": 71,
+      "covered": 21,
+      "percentage": 29.58
+    },
+    "groups": {
+      "total": 305,
+      "covered": 21,
+      "percentage": 6.89,
+      "note": "Core appview sample catalog covers representative groups; full 305-group rollout pending"
+    },
+    "classes": {
+      "total": 1167,
+      "covered": 21,
+      "percentage": 1.8,
+      "note": "Core appview sample catalog covers representative classes; full class expansion pending"
+    },
+    "subclasses": {
+      "total": 2738,
+      "covered": 23,
+      "percentage": 0.84,
+      "note": "Seeded subclass samples in cpc-cpc2p1-core; full CPC 2.1 subclass population pending"
+    }
+  },
+  "etzhayyim:sectionCoordinators": [
+    {
+      "nanoid": "c0ag4r1p",
+      "section": 0,
+      "name": "Agriculture, forestry, fishery products",
+      "divisions": 4,
+      "export": "etzhayyim:cpc-0/agriculture-products@1.0.0"
+    },
+    {
+      "nanoid": "c1mn5r2q",
+      "section": 1,
+      "name": "Ores, minerals, electricity, gas, water",
+      "divisions": 8,
+      "export": "etzhayyim:cpc-1/extractive-products@1.0.0"
+    },
+    {
+      "nanoid": "c2fd6t3r",
+      "section": 2,
+      "name": "Food, beverages, tobacco, textiles, apparel",
+      "divisions": 9,
+      "export": "etzhayyim:cpc-2/consumer-goods@1.0.0"
+    },
+    {
+      "nanoid": "c3ig7u4s",
+      "section": 3,
+      "name": "Other transportable goods",
+      "divisions": 9,
+      "export": "etzhayyim:cpc-3/industrial-goods@1.0.0"
+    },
+    {
+      "nanoid": "c4me8v5t",
+      "section": 4,
+      "name": "Metal products, machinery, equipment",
+      "divisions": 9,
+      "export": "etzhayyim:cpc-4/capital-goods@1.0.0"
+    },
+    {
+      "nanoid": "c5cn9w6u",
+      "section": 5,
+      "name": "Constructions, construction services",
+      "divisions": 4,
+      "export": "etzhayyim:cpc-5/construction-services@1.0.0"
+    },
+    {
+      "nanoid": "c6ds0x7v",
+      "section": 6,
+      "name": "Trade, transport, utilities distribution",
+      "divisions": 9,
+      "export": "etzhayyim:cpc-6/distribution-services@1.0.0"
+    },
+    {
+      "nanoid": "c7fn1y8w",
+      "section": 7,
+      "name": "Financial, real estate, rental services",
+      "divisions": 3,
+      "export": "etzhayyim:cpc-7/financial-services@1.0.0"
+    },
+    {
+      "nanoid": "c8bs2z9x",
+      "section": 8,
+      "name": "Business, production services",
+      "divisions": 9,
+      "export": "etzhayyim:cpc-8/business-services@1.0.0"
+    },
+    {
+      "nanoid": "c9cs3a0y",
+      "section": 9,
+      "name": "Community, social, personal services",
+      "divisions": 9,
+      "export": "etzhayyim:cpc-9/community-services@1.0.0"
+    }
+  ]
+}
