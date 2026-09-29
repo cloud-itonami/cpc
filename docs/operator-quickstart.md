@@ -109,7 +109,7 @@ allow-scripts[]=@anthropic-ai/claude-code
 NPM_CONFIG_USERCONFIG=/dev/null pnpm install
 ```
 
-**この壁は fleet のノードでは出ない可能性が高い**（同種の事例が superproject の CLAUDE.md に
+**この壁は fleet のノードでは出ない可能性が高い**（同種の事例が superproject の AGENTS.md に
 ある —— 「ローカルで赤」は「fleet で赤」ではない）。ローカルの結果だけで repo を壊れていると
 判定しないこと。
 
@@ -174,7 +174,7 @@ ERR_PNPM_WORKSPACE_PKG_NOT_FOUND
    `vertex_cpc_product` に書く）と食い違っている。1 と 2 には依存しないので、
    **この repo だけで完結して直せる唯一の赤**ではある。
 4. **`data/products/` を用意する**（seeder の入力。§3-d）。
-5. `PROJECT.jsonld` / `CLAUDE.md` と実装の食い違い（README の表）を、どちらへ寄せるか決める。
+5. `PROJECT.jsonld` / `AGENTS.md` と実装の食い違い（README の表）を、どちらへ寄せるか決める。
 
 **3 は §2 の手順で赤→緑を目で確認できる**（install を通す必要が無いため）。1・2 は cpc 単独の
 判断では決められない。
