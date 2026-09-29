@@ -43,7 +43,7 @@
 | `appview/cpc-cpc2p1-core/src/app.ts` | kotodama worker。9 コマンド + heartbeat | 489 | `@etzhayyim/kotodama-host-sdk` |
 | `appview/cpc-cpc2p1-core/src/app.test.ts` | worker コマンドのテスト（host SDK は mock） | 159 | vitest のみ |
 | `PROJECT.jsonld` | DODAF/WIT の設計宣言（83 component、11 WIT package の**予定**） | — | — |
-| `CLAUDE.md` | Contract-Bounded Architecture の設計方針 | — | — |
+| `AGENTS.md` | Contract-Bounded Architecture の設計方針 | — | — |
 
 ### 2 つの依存が今どこに居るか（「無い」と結論する前に索引を引いた結果）
 
@@ -127,7 +127,7 @@ DID: `did:web:cpc.etzhayyim.com:product:{code}`
 | `PROJECT.jsonld` `coverage.classes` | 21 | 22 |
 | `PROJECT.jsonld` `coverage.subclasses` | 23 | 22 |
 | `PROJECT.jsonld` `coverage.divisions.total` | 71 | `app.ts` の `cmdStats` は **73** で割っている |
-| `CLAUDE.md` の tsukuru 対応表 | division 43 を含む 5 件 | `app.ts` は **4 件**（43 が無い） |
+| `AGENTS.md` の tsukuru 対応表 | division 43 を含む 5 件 | `app.ts` は **4 件**（43 が無い） |
 | `README.edn` `:name` | `com-etzhayyim-app-cpc` | 実際の remote は `cloud-itonami/cpc` |
 | `migration.edn` `:destination` | `etzhayyim/com-etzhayyim-app-cpc` | 同上 |
 
@@ -156,7 +156,7 @@ DID: `did:web:cpc.etzhayyim.com:product:{code}`
 
 ## 設計の背景
 
-`CLAUDE.md` が Contract-Bounded Component Architecture（規制根拠 → WIT interface → APP DO →
+`AGENTS.md` が Contract-Bounded Component Architecture（規制根拠 → WIT interface → APP DO →
 Entity DO）を、`PROJECT.jsonld` が 11 の WIT package と 10 の section coordinator を宣言して
 いる。**この 2 つは設計の宣言であって、実装の記述ではない** —— 現時点で `wit/` ディレクトリは
 この repo に存在せず、実装は上表の 6 ファイルだけである。読むときは分けて読むこと。
